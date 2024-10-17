@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-03T08:24:28.005Z",
+    "end": "2024-10-03T08:24:28.500Z",
+    "duration": 495,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d2f89050-5693-4901-9e0f-15465dbf4ffc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\CheckoutProcess.cy.js",
+      "file": "cypress\\e2e\\CheckoutProcess.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 404,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at ./node_modules/ci-info/index.js (webpack://cypressassignment_1/./node_modules/ci-info/index.js:5:0)\n    at __webpack_require__ (webpack://cypressassignment_1/webpack/bootstrap:19:0)\n    at ./node_modules/is-ci/index.js (webpack://cypressassignment_1/./node_modules/is-ci/index.js:3:0)\n    at __webpack_require__ (webpack://cypressassignment_1/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/lib/util.js (webpack://cypressassignment_1/./node_modules/cypress/lib/util.js:12:13)\n    at __webpack_require__ (webpack://cypressassignment_1/webpack/bootstrap:19:0)\n    at ./node_modules/cypress/index.js (webpack://cypressassignment_1/./node_modules/cypress/index.js:6:13)\n    at __webpack_require__ (webpack://cypressassignment_1/webpack/bootstrap:19:0)\n    at eval (webpack://cypressassignment_1/./cypress/e2e/CheckoutProcess.cy.js:5:0)\n    at eval (http://localhost:62937/__cypress/tests?p=cypress\\e2e\\CheckoutProcess.cy.js:153008:3)",
+            "diff": null
+          },
+          "uuid": "b40ca43d-10e1-45c8-b142-6cf3929ac113",
+          "parentUUID": "d2f89050-5693-4901-9e0f-15465dbf4ffc",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "b40ca43d-10e1-45c8-b142-6cf3929ac113"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 404,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name]",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-reports",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "reportFilename": "[name]"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
